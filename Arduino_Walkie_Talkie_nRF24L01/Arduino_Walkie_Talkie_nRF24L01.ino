@@ -3,7 +3,7 @@
 #include <RF24Audio.h>
 #include "printf.h"    // General includes for radio and audio lib
 RF24 radio(7,8);    // Set radio up using pins 7 (CE) 8 (CS)
-RF24Audio rfAudio(radio,0); // Set up the audio using the radio, and set to radio number
+RF24Audio rfAudio(radio,0); // Set up the audio using the radio, and set to radio number 0
 int talkButton = 3;
 void setup() {      
   Serial.begin(115200);
